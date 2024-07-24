@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.mainDiv {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(13, 35, 69, 0.8) 25%, transparent 25%) -50px 0,
+                linear-gradient(225deg, rgba(25, 63, 121, 0.8) 25%, transparent 25%) -50px 0,
+                linear-gradient(315deg, rgba(25, 63, 121, 0.8) 25%, transparent 25%),
+                linear-gradient(45deg, rgba(25, 63, 121, 0.8) 25%, transparent 25%);
+    background-size: 100px 100px;
+}
+
+.centerDiv {
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    padding: 20px;
+    background: rgba(48, 31, 31, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+    text-shadow: 1px 2px 3px #000000;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+h2 {
+    color: #e9ebec;
+    background-color: #2277af;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    background-color: #362f2f;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 15px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+    border: 2px solid #2277af;
+}
+
+.mainbtn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    background: #2277af;
+    color: #ecf0f1;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mainbtn:hover {
+    background-color: #1a5a8b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    textarea {
+        font-size: 1.1rem;
+    }
+
+    .mainbtn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    textarea {
+        font-size: 1rem;
+        height: 150px;
+    }
+
+    .mainbtn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
